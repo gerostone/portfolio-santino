@@ -448,21 +448,6 @@ h1 {
   font-size: 14px;
 }
 
-/* ===== STICKY CTA ===== */
-.sticky-cta {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #111;
-  padding: 10px;
-  z-index: 1000;
-  display: none;
-}
-
-.sticky-cta .btn {
-  width: 100%;
-}
 
 /* ===== UTILITY CLASSES ===== */
 .btn-group {
@@ -522,11 +507,6 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
-  .sticky-cta {
-    display: block;
-  }
-}
 
 @media (max-width: 600px) {
   .kpis {
