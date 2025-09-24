@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menos improvisación. Más orden. — Santino Mastronardi</title>
+  <meta name="description" content="Pasá de publicar a vender: estrategia, producción y calendario mensual. Brief en 60 segundos.">
+  <link rel="stylesheet" href="css\styles.css">
+  
+  <script>
+    // WhatsApp link templates to reduce repetition
+    const whatsappLinks = {
+      main: 'https://wa.me/5491136252636?text=Hola%20Santino,%20quiero%20ordenar%20mis%20redes.%20Rubro:%20___%20Objetivo:%20___%20Frecuencia%20deseada:%20___',
+      consultation: 'https://wa.me/5491136252636?text=Hola%20Santino%2C%20vengo%20de%20la%20landing%20y%20quiero%20asesor%C3%ADa%20para%20Instagram.',
+      packInicial: 'https://wa.me/5491136252636?text=Quiero%20info%20del%20Pack%20Inicial',
+      packPro: 'https://wa.me/5491136252636?text=Quiero%20info%20del%20Pack%20Pro',
+      landing: 'https://wa.me/5491136252636?text=Hola%20Santino%20%2D%20vengo%20de%20la%20landing',
+      instagram: 'https://wa.me/5491136252636?text=Hola%20Santino%20%2D%20quiero%20asesor%C3%ADa%20para%20Instagram'
+    };
+
+    // Function to update all WhatsApp links on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('a[href*="wa.me"]');
+      links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href.includes('Quiero%20ordenar%20mis%20redes')) {
+          link.setAttribute('href', whatsappLinks.main);
+        } else if (href.includes('asesor%C3%ADa%20para%20Instagram')) {
+          link.setAttribute('href', whatsappLinks.consultation);
+        } else if (href.includes('Pack%20Inicial')) {
+          link.setAttribute('href', whatsappLinks.packInicial);
+        } else if (href.includes('Pack%20Pro')) {
+          link.setAttribute('href', whatsappLinks.packPro);
+        } else if (href.includes('vengo%20de%20la%20landing')) {
+          link.setAttribute('href', whatsappLinks.landing);
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="sticky-cta">
+    <a class="btn primary" href="#formulario">Quiero ordenarlas</a>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <span class="badge">Tu Instagram en orden</span>
+          <h1>Profesionalizá tu Instagram. <span style="background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Más orden</span>, <span style="color: var(--brand-secondary);">menos improvisación</span>.</h1>
+        <p>Calendarización por rubro, estética consistente e informe mensual.</p>
+        <div class="btn-group">
+          <a class="btn primary" href="#formulario">Quiero ordenarlas</a>
+          <a class="btn ghost" href="https://wa.me/5491136252636?text=Hola%20Santino%2C%20vengo%20de%20la%20landing%20y%20quiero%20asesor%C3%ADa%20para%20Instagram.">Hablar por WhatsApp</a>
+        </div>
+        
+        <div class="kpis">
+          <div class="kpi">
+            <h3>+ Calendario</h3>
+            <p>Calendarización mensual de contenidos acordes a tu rubro</p>
+          </div>
+          <div class="kpi">
+            <h3>+ Estética consciente</h3>
+            <p>Tipografías, paleta de colores y portadas alineadas</p>
+          </div>
+          <div class="kpi">
+            <h3>+ Decisiones con datos</h3>
+            <p>Informe mensual basado en datos de tus redes</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p class="muted-text" style="margin:0 0 10px; color: #FFFFFF !important;">¿Qué incluye el sistema?</p>
+        <ul class="features">
+          <li><span class="tick"></span><div>Evaluación express de tu perfil y quick-wins</div></li>
+          <li><span class="tick"></span><div>Sistema visual: tipografía, colores, portadas</div></li>
+          <li><span class="tick"></span><div>Calendario mensual y guías de producción</div></li>
+          <li><span class="tick"></span><div>Producción y publicación (con copies)</div></li>
+          <li><span class="tick"></span><div>Informe mensual para decidir con datos</div></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Elegí tu modo</h2>
+      <p class="lead">Dos maneras de trabajar, mismo objetivo: ordenar tus redes.</p>
+      <div class="grid modes">
+        <div class="pack" style="background: #FFFFFF !important; border: 1px solid #E0E0E0 !important; color: #1A1A1A !important;">
+          <span class="badge badge-corner">Nuevo</span>
+          <h3 style="color: #1A1A1A !important;">Pack Inicial</h3>
+          <p class="muted-text">Ideal para ordenar e iniciar</p>
+          <ul class="features">
+            <li><span class="tick"></span><div>5 posts</div></li>
+            <li><span class="tick"></span><div>2 reels</div></li>
+            <li><span class="tick"></span><div>2 portadas de reels</div></li>
+            <li><span class="tick"></span><div>14 historias</div></li>
+            <li><span class="tick"></span><div>Orden de biografía e historias destacadas</div></li>
+            <li><span class="tick"></span><div>Armonización de feed</div></li>
+            <li><span class="tick"></span><div>Reunión virtual mensual (1 h)</div></li>
+            <li><span class="tick"></span><div>Muestra previa de propuesta de feed + intercambio de resultados</div></li>
+          </ul>
+          <div class="btn-group pack-buttons">
+            <a class="btn primary" href="https://wa.me/5491136252636?text=Hola%20Santino,%20quiero%20ordenar%20mis%20redes.%20Rubro:%20___%20Objetivo:%20___%20Frecuencia%20deseada:%20___">Quiero este pack</a>
+            <a class="btn" href="https://wa.me/5491136252636?text=Quiero%20info%20del%20Pack%20Inicial">WhatsApp</a>
+          </div>
+        </div>
+        <div class="pack pack-pro" style="background: #FFFFFF !important; border: 1px solid #EB661B !important; color: #1A1A1A !important;">
+          <span class="badge badge-corner badge-featured">Más elegido</span>
+          <h3 style="color: #1A1A1A !important;">Pack Pro</h3>
+          <p class="muted-text">Crecimiento sostenido</p>
+          <ul class="features">
+            <li><span class="tick"></span><div>8 posts</div></li>
+            <li><span class="tick"></span><div>4 reels</div></li>
+            <li><span class="tick"></span><div>4 portadas de reels</div></li>
+            <li><span class="tick"></span><div>22 historias</div></li>
+            <li><span class="tick"></span><div>Reunión virtual mensual (1 h)</div></li>
+            <li><span class="tick"></span><div>Muestra previa de propuesta de feed + intercambio de resultados</div></li>
+          </ul>
+          <div class="btn-group pack-buttons">
+            <a class="btn primary" href="https://wa.me/5491136252636?text=Hola%20Santino,%20quiero%20ordenar%20mis%20redes.%20Rubro:%20___%20Objetivo:%20___%20Frecuencia%20deseada:%20___">Quiero este pack</a>
+            <a class="btn" href="https://wa.me/5491136252636?text=Quiero%20info%20del%20Pack%20Pro">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <p class="disclaimer">Ninguno de estos servicios incluye pauta publicitaria ni gestión de comentarios 24/7.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container value grid">
+      <div class="card">
+        <h3>Producción simple</h3>
+        <p>Briefs cortos, feedback y entregables claros. Sin vueltas.</p>
+      </div>
+      <div class="card">
+        <h3>Estética consistente</h3>
+        <p>Tipografías, paleta y portadas alineadas a tu marca.</p>
+      </div>
+      <div class="card">
+        <h3>Decisiones con datos</h3>
+        <p>Informe mensual entendible. Qué funcionó, qué no y qué se hace después.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="casos">
+    <div class="container">
+      <h2>Casos de éxito</h2>
+      <p class="lead">Proyectos que confiaron en mi trabajo para ordenar sus redes sociales.</p>
+      
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <div class="card caso-card">
+                <div class="caso-header">
+                  <div class="caso-logo">
+                    <img src="assets\knd.jpg" alt="KND Kicks" class="logo-circular">
+                  </div>
+                  <h3>KND Kicks</h3>
+                  <p class="muted-text">Calzado deportivo y streetwear</p>
+                </div>
+                <div class="caso-content">
+                  <p>Administración completa de Instagram con enfoque en productos y lifestyle. Feed ordenado con estética consistente y engagement optimizado.</p>
+                  <a href="https://www.instagram.com/knd.kicks?igsh=cGdncWFzYTVieHh0" target="_blank" class="btn ghost">Ver perfil</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="card caso-card">
+                <div class="caso-header">
+                  <div class="caso-logo">
+                    <img src="assets\rumar.jpg" alt="Rumar Casa" class="logo-circular">
+                  </div>
+                  <h3>Rumar Casa</h3>
+                  <p class="muted-text">Decoración y diseño de interiores</p>
+                </div>
+                <div class="caso-content">
+                  <p>Gestión de contenido enfocado en transformaciones de espacios, tips de decoración y showcase de productos. Estética minimalista y profesional.</p>
+                  <a href="https://www.instagram.com/rumarcasa?igsh=ZzhtMnVpc2gzZXh1" target="_blank" class="btn ghost">Ver perfil</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="card caso-card">
+                <div class="caso-header">
+                  <div class="caso-logo">
+                    <img src="assets\moroff.jpg" alt="Moroff Estudio" class="logo-circular">
+                  </div>
+                  <h3>Moroff Estudio</h3>
+                  <p class="muted-text">Diseño gráfico y branding</p>
+                </div>
+                <div class="caso-content">
+                  <p>Desarrollo de identidad visual y gestión de redes sociales para estudio de diseño. Contenido creativo que refleja la personalidad de la marca.</p>
+                  <a href="https://www.instagram.com/moroff.estudio?igsh=MWkwbnJuc3BtamI5eg==" target="_blank" class="btn ghost">Ver perfil</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="card caso-card">
+                <div class="caso-header">
+                  <div class="caso-logo">
+                    <img src="assets\donparfum.jpg" alt="Don Parfum" class="logo-circular">
+                  </div>
+                  <h3>Don Parfum</h3>
+                  <p class="muted-text">Perfumes y fragancias</p>
+                </div>
+                <div class="caso-content">
+                  <p>Estrategia de contenido para marca de perfumes con enfoque en lifestyle y experiencias sensoriales. Feed elegante y sofisticado.</p>
+                  <a href="https://www.instagram.com/donparfum.arg?igsh=MTZ1YWVkdnJiZGxnNw%3D%3D&utm_source=qr" target="_blank" class="btn ghost">Ver perfil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-controls">
+          <button class="carousel-btn prev-btn" id="prevBtn">‹</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn next-btn" id="nextBtn">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container sobre">
+      <div class="card sobre-mi">
+        <h2 class="section-title" style="text-align: center;">Sobre mí</h2>
+        <div style="text-align: center;">
+          <img src="assets\foto.jpeg" alt="Santino Mastronardi" class="profile-photo">
+        </div>
+        <p class="muted-text" style="margin-top:8px">
+          Me dedico a acompañar en la gestión de la comunicación y el marketing a PyMEs, ordenando sus redes,
+          con una calendarización que funcione mes a mes y abriendo un potencial nuevo canal de venta.
+        </p>
+        <p class="muted-text" style="margin-top:8px">
+          Trabajo con Meta Suite, Notion, Photoshop/Illustrator y CapCut, y cierro cada mes con un informe para decidir con datos.
+        </p>
+      </div>
+      <div class="card modo-trabajo">
+        <h2 class="section-title" style="text-align: center;">Modo de trabajo</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Kickoff + diagnóstico express</h4>
+              <p>Análisis inicial y definición de objetivos</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Calendario y guías de producción</h4>
+              <p>Planificación mensual y estrategia de contenido</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Publicación + seguimiento</h4>
+              <p>Ejecución y monitoreo de resultados</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Informe mensual</h4>
+              <p>Análisis de datos y optimización continua</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="formulario">
+    <div class="container">
+      <h2>Contame de tu negocio</h2>
+      <p class="lead">Completá el formulario y te respondo con una propuesta concreta.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3INQOjL1mSOa_j5aOjNAQ6AQcC21zB8_tuoqOwm0xZFVMVQ/viewform?embedded=true" width="100%" height="993" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </div>
+  </section>
+
+  <footer class="dock">
+    <div class="container dock-inner">
+      <p>¿Listo para ordenar tus redes?</p>
+      <div class="btn-group">
+        <a class="btn primary" href="#formulario">Quiero ordenarlas</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Fixed Icon -->
+  <a href="https://wa.me/5491136252636?text=Hola%20Santino%20%2D%20quiero%20asesor%C3%ADa%20para%20Instagram" class="whatsapp-fixed" target="_blank">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+    </svg>
+  </a>
+
+  <script>
+    // Carrusel functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.getElementById('carouselTrack');
+      const slides = document.querySelectorAll('.carousel-slide');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const dotsContainer = document.getElementById('carouselDots');
+      
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+      
+      // Create dots - one for each navigation position
+      function createDots() {
+        dotsContainer.innerHTML = ''; // Clear existing dots
+        const slidesPerView = getSlidesPerView();
+        const maxPositions = Math.max(1, totalSlides - slidesPerView + 1);
+        
+        for (let i = 0; i < maxPositions; i++) {
+          const dot = document.createElement('div');
+          dot.className = 'carousel-dot';
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        }
+      }
+      
+      // Update carousel position
+      function updateCarousel() {
+        const slidesPerView = getSlidesPerView();
+        const slideWidth = 100 / slidesPerView;
+        track.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+        
+        // Update dots
+        document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentSlide);
+        });
+        
+        // Update buttons
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide >= totalSlides - slidesPerView;
+      }
+      
+      // Get number of slides per view based on screen size
+      function getSlidesPerView() {
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+      }
+      
+      // Go to specific slide
+      function goToSlide(slideIndex) {
+        const slidesPerView = getSlidesPerView();
+        const maxSlide = Math.max(0, totalSlides - slidesPerView);
+        currentSlide = Math.max(0, Math.min(slideIndex, maxSlide));
+        updateCarousel();
+      }
+      
+      // Next slide
+      function nextSlide() {
+        const slidesPerView = getSlidesPerView();
+        const maxSlide = totalSlides - slidesPerView;
+        if (currentSlide < maxSlide) {
+          currentSlide++;
+          updateCarousel();
+        }
+      }
+      
+      // Previous slide
+      function prevSlide() {
+        if (currentSlide > 0) {
+          currentSlide--;
+          updateCarousel();
+        }
+      }
+      
+      // Event listeners
+      nextBtn.addEventListener('click', nextSlide);
+      prevBtn.addEventListener('click', prevSlide);
+      
+      // Handle window resize
+      window.addEventListener('resize', () => {
+        updateCarousel();
+      });
+      
+      // Initialize
+      createDots();
+      updateCarousel();
+    });
+  </script>
+</body>
+</html>
