@@ -93,7 +93,6 @@ a:hover {
   border-radius: 9999px;
   color: white;
   background: var(--gradient);
-  box-shadow: 0 4px 15px rgba(235, 102, 27, 0.2);
 }
 
 .badge-corner {
@@ -103,7 +102,6 @@ a:hover {
   background: var(--gradient-reverse);
   color: white;
   border: 1px solid var(--brand-secondary);
-  box-shadow: 0 4px 15px rgba(235, 136, 28, 0.2);
 }
 
 /* ===== HERO SECTION ===== */
@@ -359,7 +357,7 @@ h1 {
 /* ===== TIMELINE ===== */
 .timeline {
   position: relative;
-  padding: 20px 0;
+  padding: 10px 0 20px 0;
 }
 
 .timeline::before {
@@ -369,9 +367,9 @@ h1 {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: var(--gradient);
+  background: #97DC27;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(235, 102, 27, 0.2);
+  box-shadow: 0 0 10px rgba(151, 220, 39, 0.3);
 }
 
 .timeline-item {
@@ -391,15 +389,15 @@ h1 {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: var(--gradient);
+  background: #97DC27;
   border: 3px solid var(--card);
   z-index: 1;
-  box-shadow: 0 0 15px rgba(235, 102, 27, 0.3);
+  box-shadow: 0 0 15px rgba(151, 220, 39, 0.4);
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
-  background: var(--gradient-reverse);
-  box-shadow: 0 0 15px rgba(235, 136, 28, 0.3);
+  background: #97DC27;
+  box-shadow: 0 0 15px rgba(151, 220, 39, 0.4);
 }
 
 .timeline-content h4 {
@@ -492,7 +490,6 @@ h1 {
   background: var(--gradient);
   color: white;
   border-color: transparent;
-  box-shadow: 0 4px 15px rgba(235, 102, 27, 0.3);
 }
 
 /* ===== FORM CARD ===== */
@@ -539,7 +536,7 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   margin: 16px 0 20px 0;
-  border: 3px solid var(--brand);
+  border: 3px solid #4B5039;
   box-shadow: var(--shadow);
 }
 
@@ -604,7 +601,7 @@ h1 {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--brand);
+  border: 2px solid #6B7A68;
 }
 
 .caso-header h3 {
@@ -629,6 +626,17 @@ h1 {
 
 .caso-content .btn {
   margin-top: auto;
+}
+
+.caso-content .btn.ghost {
+  background: transparent;
+  border-color: #6B7A68;
+  color: #6B7A68;
+}
+
+.caso-content .btn.ghost:hover {
+  background: #6B7A68;
+  color: white;
 }
 
 .carousel-controls {
