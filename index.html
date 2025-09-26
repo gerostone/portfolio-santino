@@ -339,7 +339,15 @@
       function createDots() {
         dotsContainer.innerHTML = ''; // Clear existing dots
         const slidesPerView = getSlidesPerView();
-        const maxPositions = Math.max(1, totalSlides - slidesPerView + 1);
+        
+        // En móviles (slidesPerView = 1), crear un dot por cada slide
+        // En desktop/tablet, mantener la lógica original
+        let maxPositions;
+        if (slidesPerView === 1) {
+          maxPositions = totalSlides; // Un dot por cada slide en móviles
+        } else {
+          maxPositions = Math.max(1, totalSlides - slidesPerView + 1);
+        }
         
         for (let i = 0; i < maxPositions; i++) {
           const dot = document.createElement('div');
@@ -361,9 +369,16 @@
           dot.classList.toggle('active', index === currentSlide);
         });
         
-        // Update buttons
-        prevBtn.disabled = currentSlide === 0;
-        nextBtn.disabled = currentSlide >= totalSlides - slidesPerView;
+        // Update buttons - lógica diferente para móviles
+        if (slidesPerView === 1) {
+          // En móviles: navegar por cada slide individualmente
+          prevBtn.disabled = currentSlide === 0;
+          nextBtn.disabled = currentSlide >= totalSlides - 1;
+        } else {
+          // En desktop/tablet: lógica original
+          prevBtn.disabled = currentSlide === 0;
+          nextBtn.disabled = currentSlide >= totalSlides - slidesPerView;
+        }
       }
       
       // Get number of slides per view based on screen size
@@ -376,7 +391,16 @@
       // Go to specific slide
       function goToSlide(slideIndex) {
         const slidesPerView = getSlidesPerView();
-        const maxSlide = Math.max(0, totalSlides - slidesPerView);
+        let maxSlide;
+        
+        if (slidesPerView === 1) {
+          // En móviles: permitir ir a cualquier slide
+          maxSlide = totalSlides - 1;
+        } else {
+          // En desktop/tablet: lógica original
+          maxSlide = Math.max(0, totalSlides - slidesPerView);
+        }
+        
         currentSlide = Math.max(0, Math.min(slideIndex, maxSlide));
         updateCarousel();
       }
@@ -384,7 +408,16 @@
       // Next slide
       function nextSlide() {
         const slidesPerView = getSlidesPerView();
-        const maxSlide = totalSlides - slidesPerView;
+        let maxSlide;
+        
+        if (slidesPerView === 1) {
+          // En móviles: navegar por cada slide
+          maxSlide = totalSlides - 1;
+        } else {
+          // En desktop/tablet: lógica original
+          maxSlide = totalSlides - slidesPerView;
+        }
+        
         if (currentSlide < maxSlide) {
           currentSlide++;
           updateCarousel();
@@ -405,6 +438,7 @@
       
       // Handle window resize
       window.addEventListener('resize', () => {
+        createDots(); // Recrear dots cuando cambie el tamaño
         updateCarousel();
       });
       

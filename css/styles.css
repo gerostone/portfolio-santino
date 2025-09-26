@@ -560,7 +560,7 @@ h1 {
 
 .carousel-slide {
   flex: 0 0 100%;
-  min-width: 300px;
+  min-width: 0;
 }
 
 .caso-card {
@@ -693,14 +693,14 @@ h1 {
 @media (min-width: 768px) {
   .carousel-slide {
     flex: 0 0 50%;
-    min-width: 300px;
+    min-width: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .carousel-slide {
     flex: 0 0 33.333%;
-    min-width: 300px;
+    min-width: 0;
   }
 }
 
@@ -778,6 +778,255 @@ h1 {
   .whatsapp-fixed svg {
     width: 24px;
     height: 24px;
+  }
+}
+
+/* ===== IPHONE & MOBILE RESPONSIVE ===== */
+@media (max-width: 414px) {
+  /* iPhone Plus y más pequeños */
+  .container {
+    width: 95vw;
+    padding: 0 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .grid {
+    gap: 16px;
+  }
+  
+  .btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .carousel-container {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+  
+  .carousel-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    gap: 16px;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100% !important;
+    min-width: 0 !important;
+  }
+  
+  .caso-card {
+    padding: 16px;
+    margin: 0;
+    border-radius: 12px;
+    min-width: 0;
+  }
+  
+  .carousel-controls {
+    margin-top: 20px;
+    gap: 12px;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .caso-header h3 {
+    font-size: 18px;
+  }
+  
+  .caso-content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .timeline {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-dot {
+    left: 6px;
+  }
+  
+  .timeline-item {
+    padding-left: 40px;
+  }
+  
+  .timeline-content h4 {
+    font-size: 16px;
+  }
+  
+  .timeline-content p {
+    font-size: 14px;
+  }
+  
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+    margin: 8px 0 12px 0;
+  }
+  
+  .whatsapp-fixed {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .whatsapp-fixed svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  /* Formulario responsive */
+  iframe {
+    height: 1400px !important;
+    border-radius: 8px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  /* iPhone SE y modelos más pequeños */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100% !important;
+    min-width: 0 !important;
+  }
+  
+  .caso-card {
+    padding: 12px;
+    margin: 0;
+    min-width: 0;
+  }
+  
+  .caso-header h3 {
+    font-size: 16px;
+  }
+  
+  .caso-content p {
+    font-size: 13px;
+  }
+  
+  .btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  
+  .timeline-content h4 {
+    font-size: 15px;
+  }
+  
+  .timeline-content p {
+    font-size: 13px;
+  }
+  
+  /* Formulario para pantallas pequeñas */
+  iframe {
+    height: 1200px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  /* iPhone 5/SE y dispositivos muy pequeños */
+  .container {
+    width: 98vw;
+    padding: 0 5px;
+  }
+  
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  
+  .card {
+    padding: 12px;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100% !important;
+    min-width: 0 !important;
+  }
+  
+  .caso-card {
+    padding: 10px;
+    margin: 0;
+    min-width: 0;
+  }
+  
+  .btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  /* Formulario para pantallas muy pequeñas */
+  iframe {
+    height: 1100px !important;
+  }
+}
+
+/* ===== LANDSCAPE ORIENTATION ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    padding: 40px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Formulario en landscape */
+  iframe {
+    height: 800px !important;
   }
 }
 
