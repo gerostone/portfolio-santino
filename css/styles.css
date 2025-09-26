@@ -47,6 +47,13 @@ a:hover {
 .grid {
   display: grid;
   gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ===== BUTTONS ===== */
@@ -541,7 +548,7 @@ h1 {
 }
 
 .carousel-wrapper {
-  overflow: hidden;
+  overflow: visible;
   border-radius: var(--radius);
 }
 
@@ -553,7 +560,7 @@ h1 {
 
 .carousel-slide {
   flex: 0 0 100%;
-  min-width: 0;
+  min-width: 300px;
 }
 
 .caso-card {
@@ -562,6 +569,7 @@ h1 {
   border-radius: var(--radius);
   padding: 24px;
   height: 100%;
+  min-width: 280px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   backdrop-filter: blur(10px);
 }
@@ -685,12 +693,14 @@ h1 {
 @media (min-width: 768px) {
   .carousel-slide {
     flex: 0 0 50%;
+    min-width: 300px;
   }
 }
 
 @media (min-width: 1024px) {
   .carousel-slide {
     flex: 0 0 33.333%;
+    min-width: 300px;
   }
 }
 
